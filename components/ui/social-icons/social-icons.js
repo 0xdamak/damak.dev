@@ -25,17 +25,6 @@ export default function SocialIcons({ delay }) {
           <icons.Linkedin />
         </a>
       </Link>
-
-      {/* <Link href="https://twitter.com/0xdamak">
-        <a target="_blank">
-          <icons.Twitter />
-        </a>
-      </Link> */}
-      {/* <Link href="https://www.instagram.com/damak.eth/">
-        <a target="_blank">
-          <icons.Instagram />
-        </a>
-      </Link> */}
     </motion.div>
   );
 }

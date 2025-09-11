@@ -1,8 +1,10 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
+import { DefaultSeo } from "next-seo";
 import AnimatedCursor from "react-animated-cursor";
 import Layout from "../components/layout";
 import PreLoader from "../components/ui/pre-loader";
+import SEO from "../seo.config";
 import "../styles/globals.scss";
 
 export default function MyApp({ Component, pageProps }) {
@@ -24,9 +26,9 @@ export default function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <DefaultSeo {...SEO} />
       <Head>
         <link rel="shortcut icon" href="/favicon.svg" />
-        <title>Damilola Akinlade | Front-end developer</title>
       </Head>
       <Layout>
         <Component {...pageProps} />
